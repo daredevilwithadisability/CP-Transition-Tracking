@@ -30,10 +30,8 @@
 				mapTypeId:'terrain'
 			});
 
-      var flCountyLayer = new google.maps.KmlLayer({
-        url: 'https://daredevilwithadisability.github.io/CP-Transition-Tracking/FloridaCounties.kml',
-        map: map
-      });
+      			var flCountyLayer = new google.maps.KmlLayer('https://daredevilwithadisability.github.io/CP-Transition-Tracking/FloridaCounties.kmz');
+			flCountyLayer.setMap(map);
 		}
 		
 	</script>
