@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>CTEP Transition Tracking</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+	<div id="map_canvas"></div>
+	<script type="text/javascript">
+
+		function initialize() {
+    var myOptions = {
+      center: new google.maps.LatLng(58.33, -98.52),
+      zoom: 11,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    var kmzLayer = new google.maps.KmlLayer('https://daredevilwithadisability.github.io/CP-Transition-Tracking/FloridaCounties.kmz');
+    kmzLayer.setMap(map);
+  }
+		}
+		
+	</script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAbSmYeObg3PArhdqxDAHgHzf1-XcJHf4&callback=initMap&libraries=geometry&callback=initMap">
+    </script>
+</body>
+</html>
