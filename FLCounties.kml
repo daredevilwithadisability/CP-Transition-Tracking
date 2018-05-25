@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name><![CDATA[Florida's Counties]]></name>
-    <description><![CDATA[This map contains boundaries and information relating to Florida's 67 counties.]]></description>
-    <NetworkLink>
-      <name><![CDATA[Florida's Counties]]></name>
-      <Link>
-        <href>https://www.google.com/maps/d/edit?hl=en&mid=1f2-YeFYB4jeBYGMF68sbcM9NL7tQUvOp&ll=27.66500546924197%2C-83.801985&z=7</href>
-      </Link>
-    </NetworkLink>
+    <Placemark>
+      <name>Simple placemark</name>
+      <description>Attached to the ground, Intelligently places itself at the height of the underlying terrain.</description>
+      <Point>
+        <coordinates>-81.0987,28.0634879,0</coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>
